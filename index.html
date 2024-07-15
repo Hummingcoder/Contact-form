@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="w-full min-h-screen flex font-Karla items-start md:items-center justify-center text-[#2b4246] text-sm px-3 py-4 bg-[#dff1e7]"
+    >
+      <form
+        action=""
+        class="bg-white w-full h-fit max-w-[540px] p-6 rounded-lg flex flex-col items-start justify-center gap-3 shadow-lg shadow-[#2b424632]"
+      >
+        <h1 class="text-3xl font-bold">Contact Us</h1>
+        <section class="w-full flex flex-col md:flex-row gap-3 md:gap-2">
+          <div class="input_container flex w-full flex-col items-start gap-1">
+            <label for="fname"
+              >First Name <span class="text-[#0c7d69]">*</span></label
+            >
+            <input
+              type="text"
+              id="fname"
+              class="input w-full border border-[#87a3a6] text-base p-[6px] px-4 rounded-lg outline-none"
+              name="fname"
+            />
+            <span class="error font-bold hidden text-[10px] text-red-500"
+              >This field is required</span
+            >
+          </div>
+          <div class="input_container flex w-full flex-col items-start gap-1">
+            <label for="lname"
+              >Last Name <span class="text-[#0c7d69]">*</span></label
+            >
+            <input
+              type="text"
+              class="input w-full border border-[#87a3a6] text-base p-[6px] px-4 rounded-lg outline-none"
+              id="lname"
+              name="fname"
+            />
+            <span class="error font-bold hidden text-[10px] text-red-500"
+              >This field is required</span
+            >
+          </div>
+        </section>
+        <section class="input_container w-full">
+          <label for="email">Email Address <span class="astr">*</span></label>
+          <input
+            class="input w-full mt-1 border border-[#87a3a6] text-base p-[6px] px-4 rounded-lg outline-none"
+            type="email"
+            id="email"
+            name="email"
+          />
+          <span class="error hidden font-bold text-[10px] text-red-500"
+            >This field is required</span
+          >
+        </section>
+        <section class="radio_container w-full">
+          <p class="mb-1">Query Type <span class="text-[#0c7d69]">*</span></p>
+          <div class="w-full flex flex-col sm:flex-row gap-2">
+            <div
+              class="w-full pl-5 border border-[#87a3a6] text-base p-[6px] rounded-lg flex items-center"
+            >
+              <input
+                type="radio"
+                class="radio accent-[#0c7d69] cursor-pointer"
+                id="Gquery"
+                name="query"
+              />
+              <label class="cursor-pointer pl-1" for="Gquery"
+                >General Enquiry</label
+              >
+            </div>
+            <div
+              class="w-full pl-5 border border-[#87a3a6] text-base p-[6px] rounded-lg flex items-center"
+            >
+              <input
+                type="radio"
+                class="radio accent-[#0c7d69] cursor-pointer"
+                id="Squery"
+                name="query"
+              />
+              <label for="Squery" class="cursor-pointer pl-1"
+                >Support Request</label
+              >
+            </div>
+          </div>
+          <span class="error hidden font-bold text-[10px] text-red-500"
+            >Please select a query type</span
+          >
+        </section>
+        <section class="flex w-full flex-col items-start gap-1">
+          <label for="text"
+            >Message <span class="text-[#0c7d69]">*</span></label
+          >
+          <textarea
+            maxlength="260"
+            class="textarea outline-none w-full px-4 h-[90px] resize-none border border-[#87a3a6] text-sm leading-4 p-2 rounded-lg"
+            name="text"
+            id="text"
+          ></textarea>
+          <span class="error hidden font-bold text-[10px] text-red-500"
+            >This field is required</span
+          >
+        </section>
+        <section>
+          <div class="flex items-center justify-start gap-3">
+            <input
+              class="checkbox accent-[#0c7d69] cursor-pointer"
+              type="checkbox"
+              id="check"
+              name="check"
+            />
+            <label class="cursor-pointer" for="check"
+              >I consent to being contacted by the team</label
+            >
+          </div>
+          <span class="error hidden font-bold text-[10px] text-red-500"
+            >To submit this form, please consent to being contacted</span
+          >
+        </section>
+        <button
+          class="w-full text-center bg-[#0c7d69] hover:bg-[#045042] text-white p-3 font-bold rounded-lg"
+        >
+          SUBMIT
+        </button>
+      </form>
+    </main>
+    <!-- 
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
