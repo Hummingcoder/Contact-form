@@ -26,9 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design.jpg.jpg)
+![](./design/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [here]()
-- Live Site URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/contact-form-with-tailwind-MVYHMH97eY)
+- Live Site URL: [here](https://hummingcoder.github.io/Contact-form/)
